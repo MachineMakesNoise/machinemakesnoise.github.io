@@ -237,6 +237,9 @@ section {
     border: solid 2px var(--secondary-color-shade);
     border-radius: calc(var(--font-size) * 0.5); }
 
+div.highlight {
+  text-align: left; }
+
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -279,6 +282,9 @@ p {
   padding: 0;
   border: 0;
   line-height: 175%; }
+
+p:empty {
+  display: none; }
 
 iframe {
   margin: 0;
