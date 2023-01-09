@@ -89,7 +89,7 @@ ul.main-menu li.after-separator, ul.main-menu li.before-separator {
 .text-align-center, h1.taxonomy *, h4, h3, h2, h1, section div .right, section div .left, ul.paginator-posts li.separator {
   text-align: center; }
 
-.width-100pct, p, h4, h3, h2, h1, main, div.highlight, footer div.buttons, section div.taxonomy, section div.summary, ul.paginator-posts, header {
+.width-100pct, .contact::before, p, h4, h3, h2, h1, main, div.highlight, footer div.buttons, section div.taxonomy, section div.summary, ul.paginator-posts, header {
   width: 100%; }
 
 figure, footer, h1.taxonomy, article, div.button, footer div.buttons, section div.taxonomy, section div.summary .right, section div.summary .left, section div.summary, section, ul.paginator-pager, ul.taxonomy, ul.main-menu, header {
@@ -306,8 +306,8 @@ figure {
 
 .ascii, h1, h2, h3, h4 {
   font-family: ascii, monospace;
-  letter-spacing: -0.75px;
-  line-height: calc(var(--font-size) - 0.75px); }
+  letter-spacing: -0.76px;
+  line-height: calc(var(--font-size) - 0.76px); }
   .ascii i, h1 i, h2 i, h3 i, h4 i {
     font-style: normal; }
 
@@ -331,6 +331,13 @@ figure {
 
 .order-3 {
   order: 3; }
+
+.contact::before {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  display: inline-block;
+  text-align: center;
+  content: attr(data-domain) "@" attr(data-user); }
 
 .header-ascii .e {
   color: #a8a8a8; }
